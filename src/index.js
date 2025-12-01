@@ -36,8 +36,6 @@ const main = async () => {
   const year = await askQuestion(chalk.yellow("Please select a year (2024): "));
   const day = await askQuestion(chalk.yellow("Please select a day (1,25): "));
 
-  clearLastLine();
-
   const filePath = `${import.meta.dirname}/${year}/days/${day}`;
   const file = `${filePath}/index.ts`;
 
