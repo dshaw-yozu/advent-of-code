@@ -4,7 +4,7 @@ import {
   drawMap,
   GraphMap,
   Position,
-} from "../../dikstra/index";
+} from "../../../utils/dikstra/index";
 
 type Tile = "#" | "." | "S" | "E";
 

@@ -1,4 +1,4 @@
-import { dikstras } from "../../dikstra/index";
+import { dikstras } from "../../../utils/dikstra/index";
 import {
   convertPathToDPad,
   DirectionPadButtons,

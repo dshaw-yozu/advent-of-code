@@ -3,7 +3,7 @@ import {
   dikstras,
   GraphMap,
   Position,
-} from "../../dikstra/index";
+} from "../../../utils/dikstra/index";
 
 type NumPadButtons =
   | "1"

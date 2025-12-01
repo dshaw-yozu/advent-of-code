@@ -33,11 +33,12 @@ const clearLastLine = () => {
 // Main async function
 const main = async () => {
   // Get user input using await
+  const year = await askQuestion(chalk.yellow("Please select a year (2024): "));
   const day = await askQuestion(chalk.yellow("Please select a day (1,25): "));
 
   clearLastLine();
 
-  const filePath = `${import.meta.dirname}/days/${day}`;
+  const filePath = `${import.meta.dirname}/${year}/days/${day}`;
   const file = `${filePath}/index.ts`;
 
   try {
@@ -63,5 +64,5 @@ const main = async () => {
   rl.close();
 };
 
-log(yellow("  ADVENT OF CODE - 2024  " + "\n\n"));
+log(yellow("----ADVENT OF CODE----" + "\n\n"));
 main();

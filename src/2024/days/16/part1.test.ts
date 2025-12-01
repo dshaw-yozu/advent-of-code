@@ -1,4 +1,4 @@
-import { drawMap } from "../../dikstra/index";
+import { drawMap } from "../../../utils/dikstra/index";
 import { parseInput } from "./part1";
 
 describe("part1", () => {

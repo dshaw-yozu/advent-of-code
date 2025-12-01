@@ -5,7 +5,7 @@ import {
   coordToString,
   Position,
   drawMap,
-} from "../../dikstra/index";
+} from "../../../utils/dikstra/index";
 
 export enum Direction {
   "Up" = 0,
