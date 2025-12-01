@@ -1,9 +1,16 @@
-# AOC 2024
+# Advent of Code
 
-Aim this year is to get atleast 25/50 stars using TS.
-Optional goals are:
+My aim since 2024 to to get 50% of the stars.
 
-* Learn more about CLI interfaces
+## History
+
+| Year | Stars Earned | Language | Aims                 |
+| ---- | ------------ | -------- | -------------------- |
+| 2017 | 4/50         | JS       |                      |
+| 2022 | 12/50        | JS       |                      |
+| 2023 | 2/50         | JS/TS    | Improved performance |
+| 2024 | 30/50        | TS       | CLI                  |
+| 2025 | ??/50        | TS       | Visualisations       |
 
 ## Running solutions
 
