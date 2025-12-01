@@ -32,9 +32,15 @@ const clearLastLine = () => {
 
 // Main async function
 const main = async () => {
-  // Get user input using await
-  const year = await askQuestion(chalk.yellow("Please select a year (2024): "));
-  const day = await askQuestion(chalk.yellow("Please select a day (1,25): "));
+  const [_env, _path, yearArg, dayArg] = process.argv;
+  let year = yearArg;
+  let day = dayArg;
+
+  if (!yearArg || !dayArg) {
+    // Get user input using await
+    year = await askQuestion(chalk.yellow("Please select a year (2024): "));
+    day = await askQuestion(chalk.yellow("Please select a day (1,25): "));
+  }
 
   clearLastLine();
 
@@ -51,6 +57,8 @@ const main = async () => {
     return;
   }
 
+  log(yellow(`----${year} - Day ${day}----` + "\n"));
+
   // Print the result
   exec(`npx tsx ${filePath}`, (error, stdout) => {
     if (error) {
@@ -64,5 +72,5 @@ const main = async () => {
   rl.close();
 };
 
-log(yellow("----ADVENT OF CODE----" + "\n\n"));
+log(yellow("----ADVENT OF CODE----" + "\n"));
 main();
