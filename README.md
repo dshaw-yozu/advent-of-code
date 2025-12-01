@@ -14,7 +14,7 @@ My aim since 2024 to to get 50% of the stars.
 
 ## Running solutions
 
-`node src/index.js`
+`node src/index.js {year?} {day?}`
 
 ## Running solutions (manually)
 
