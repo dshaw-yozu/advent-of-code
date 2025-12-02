@@ -1,7 +1,7 @@
 type Range = [number, number];
 
 export function getInvalidCodes(a: number, b: number) {
-  const invalidCodes = new Set<number>();
+  const invalidCodes = [];
 
   for (let i = a; i <= b; i++) {
     const numberAsString = i.toString();
@@ -14,13 +14,14 @@ export function getInvalidCodes(a: number, b: number) {
         const testString = pattern.repeat(lengthOfPattern);
 
         if (testString === numberAsString) {
-          invalidCodes.add(i);
+          invalidCodes.push(i);
+          break;
         }
       }
     }
   }
 
-  return Array.from(invalidCodes);
+  return invalidCodes;
 }
 
 export function part2Solution(ranges: Range[]): number {
