@@ -4,8 +4,8 @@ import { part2Solution } from "./part2";
 
 describe("part2", () => {
   describe("part2Solution", () => {
-    it("should return sum of all invalid codes", () => {
-      expect(part2Solution(parseInput(exampleInput))).toBe(43);
+    it("should return sum of removed rolls", () => {
+      expect(part2Solution(parseInput(exampleInput))[0]).toBe(43);
     });
   });
 });

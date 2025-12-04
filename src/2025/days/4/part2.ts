@@ -1,6 +1,6 @@
 import { Coord, coordToString, getPaperNeighbours } from "./part1";
 
-export function part2Solution(coords: Coord[]): number {
+export function part2Solution(coords: Coord[]): [number, string[][]] {
   const paperLocationsSet = new Set(
     coords.map((coord) => coordToString(coord))
   );
@@ -8,7 +8,7 @@ export function part2Solution(coords: Coord[]): number {
   let prevRemovedRolls = -1;
   let removedRolls = -2;
 
-  let stages = [];
+  let animationFrames = [];
 
   while (removedRolls !== prevRemovedRolls) {
     prevRemovedRolls = removedRolls;
@@ -22,8 +22,8 @@ export function part2Solution(coords: Coord[]): number {
       return acc;
     }, 0);
 
-    stages.push(paperLocationsSet);
+    animationFrames.push([...paperLocationsSet]);
   }
 
-  return removedRolls;
+  return [removedRolls, animationFrames];
 }

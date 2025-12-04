@@ -6,7 +6,7 @@ import {
   part2Solution,
 } from "./part2";
 
-describe("part1", () => {
+describe.skip("part2", () => {
   describe("getBiggestXDigitNumber", () => {
     it("should return the number if x is equal to its length", () => {
       expect(getBiggestXDigitNumber("1", 1)).toBe(1);

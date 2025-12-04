@@ -18,6 +18,6 @@ console.log(`Part 1 Solution: ${p1}`);
 console.log("-".repeat(20));
 
 console.time("Part 2 Time");
-const p2 = part2Solution(ranges);
+const [p2, frames] = part2Solution(ranges);
 console.timeEnd("Part 2 Time");
 console.log(`Part 2 Solution: ${p2}`);
