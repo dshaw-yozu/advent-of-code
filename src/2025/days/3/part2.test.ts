@@ -14,9 +14,8 @@ describe("part1", () => {
 
     it("should return the biggest number as read left to right", () => {
       expect(getBiggestXDigitNumber("12", 1)).toBe(2);
-      expect(getBiggestXDigitNumber("12", 1)).toBe(2);
-
-      expect(getBiggestXDigitNumber("12", 1)).toBe(2);
+      expect(getBiggestXDigitNumber("123", 1)).toBe(3);
+      expect(getBiggestXDigitNumber("143", 1)).toBe(4);
     });
   });
   describe("getHighestJoltage", () => {
