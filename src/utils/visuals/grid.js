@@ -5,11 +5,19 @@ const log = console.log;
 const yellow = chalk.bgYellow.black.bold;
 const black = chalk.bgBlack.white;
 const white = chalk.bgWhite.black;
+const blue = chalk.bgBlue;
+const green = chalk.bgGreen;
+const red = chalk.bgRed;
+const allBlack = chalk.bgBlack.black;
 
 const colors = {
   yellow,
   black,
   white,
+  blue,
+  green,
+  red,
+  allBlack,
 };
 
 const defaultColorConfig = {
