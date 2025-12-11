@@ -11,7 +11,7 @@ export const exampleInput = `7,1
 
 const coordinates = parseInput(exampleInput);
 
-describe("day 8", () => {
+describe("day 9", () => {
   describe("parseInput", () => {
     it("given the raw input text, should return list of 2d coordinates", () => {
       expect(
