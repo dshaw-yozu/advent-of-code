@@ -8,6 +8,10 @@ const rawInput = fs.readFileSync(
   "utf8"
 );
 
+// crashes due to heap overflow.
+// need to find a better way than finding all permutations
+// of button presses....
+
 console.time("Part 1 Time");
 const coordinate = parseInput1(rawInput);
 const p1 = part1Solution(coordinate);
